@@ -18,6 +18,7 @@ public class PersonItemWrite implements ItemWriter<Person> {
 
     @Override
     public void write(Chunk<? extends Person> chunk) throws Exception {
+        System.out.println("Writing " + chunk.size() + " items"); // Log kiểm tra
         personRepository.saveAll(chunk.getItems());
     }
 }

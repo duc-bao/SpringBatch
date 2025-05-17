@@ -3,9 +3,9 @@ spring:
     name: demoTest
   datasource:
     driver-class-name: com.mysql.cj.jdbc.Driver
-    url: jdbc:mysql://localhost:3306/test_batch
+    url: jdbc:mysql://10.0.1.66:3306/testbatch
     username: root
-    password:
+    password: Admin@A123
   jpa:
     hibernate:
       ddl-auto: update

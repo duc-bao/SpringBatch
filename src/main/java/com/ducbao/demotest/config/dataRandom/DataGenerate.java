@@ -17,4 +17,11 @@ public class DataGenerate {
         return persons;
     }
 
+    public List<Person> generateRange(int fromId, int toId) {
+        List<Person> persons = new ArrayList<Person>();
+        for (int i = fromId; i < toId; i++) {
+            persons.add(new Person(null, "Person_" + i));
+        }
+        return persons;
+    }
 }
